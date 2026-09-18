@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Review your ApexPlanet cart and manage quantities before checkout." />
+    <title>ApexPlanet | Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="ApexPlanet home page">
+          <span class="brand-mark">A</span>
+          <span>ApexPlanet</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="active cart-link" aria-label="Shopping cart">
+            Cart
+            <span class="cart-count" data-cart-count>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <p class="eyebrow">Your bag</p>
+          <h1>Shopping cart</h1>
+        </div>
+      </section>
+
+      <section class="section cart-section">
+        <div class="container cart-layout">
+          <div id="cartItems" class="cart-items" aria-live="polite"></div>
+          <aside class="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="subtotalValue">₹0</strong>
+            </div>
+            <div class="summary-row">
+              <span>Quantity</span>
+              <strong id="quantityValue">0</strong>
+            </div>
+            <div class="summary-row total-row">
+              <span>Total</span>
+              <strong id="totalValue">₹0</strong>
+            </div>
+            <button type="button" class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">A</span>
+            <span>ApexPlanet</span>
+          </a>
+          <p>Fast, flexible shopping with transparent pricing.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li>hello@apexplanet.com</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> ApexPlanet. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

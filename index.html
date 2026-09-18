@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ApexPlanet e-commerce store with curated electronics, accessories, books, home goods and apparel." />
+    <title>ApexPlanet | Modern E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="ApexPlanet home page">
+          <span class="brand-mark">A</span>
+          <span>ApexPlanet</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+            Cart
+            <span class="cart-count" data-cart-count>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh arrivals and trusted quality</p>
+            <h1>Discover Products You'll Love</h1>
+            <p>Quality essentials for everyday living, work, and play — curated for smarter, faster shopping.</p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary">Shop Now</a>
+              <a href="about.html" class="btn btn-secondary">Why Choose Us</a>
+            </div>
+            <ul class="hero-meta" aria-label="Store highlights">
+              <li>Free delivery over ₹999</li>
+              <li>Easy returns</li>
+              <li>Secure checkout</li>
+            </ul>
+          </div>
+          <div class="hero-visual" aria-label="Featured shopping collection">
+            <div class="hero-card hero-card-main">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Premium headphones" />
+            </div>
+            <div class="hero-card hero-card-small">
+              <span>Top Rated</span>
+              <strong>4.9/5</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Browse by category</p>
+            <h2>Shop popular collections</h2>
+          </div>
+          <div class="category-grid">
+            <a class="category-card" href="products.html?category=Electronics">
+              <span class="category-icon">📱</span>
+              <h3>Electronics</h3>
+            </a>
+            <a class="category-card" href="products.html?category=Clothing">
+              <span class="category-icon">👕</span>
+              <h3>Clothing</h3>
+            </a>
+            <a class="category-card" href="products.html?category=Accessories">
+              <span class="category-icon">⌚</span>
+              <h3>Accessories</h3>
+            </a>
+            <a class="category-card" href="products.html?category=Books">
+              <span class="category-icon">📚</span>
+              <h3>Books</h3>
+            </a>
+            <a class="category-card" href="products.html?category=Home">
+              <span class="category-icon">🏠</span>
+              <h3>Home</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Featured picks</p>
+            <h2>Trending products</h2>
+          </div>
+          <div id="featuredProducts" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why customers choose us</p>
+            <h2>Built for smarter shopping</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="info-card">
+              <h3>Fast shipping</h3>
+              <p>Prompt dispatch and real-time stock tracking on every order.</p>
+            </article>
+            <article class="info-card">
+              <h3>Curated quality</h3>
+              <p>Only trusted brands and reliable essentials fill our catalog.</p>
+            </article>
+            <article class="info-card">
+              <h3>Customer support</h3>
+              <p>Friendly assistance before, during, and after purchase.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg" id="task5-demo">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Project proof</p>
+            <h2>Task 5 — Skills &amp; Requirements Demonstrated</h2>
+          </div>
+          <div class="demo-grid">
+            <div class="demo-card">
+              <h3>🚀 Full Web Application</h3>
+              <ul>
+                <li>E-Commerce application</li>
+                <li>Dynamic product listing</li>
+                <li>Product search</li>
+                <li>Product filtering</li>
+                <li>Product sorting</li>
+                <li>Product details</li>
+                <li>Shopping cart</li>
+                <li>Quantity management</li>
+                <li>localStorage persistence</li>
+                <li>Contact form validation</li>
+              </ul>
+            </div>
+            <div class="demo-card">
+              <h3>⚡ Performance Optimization</h3>
+              <ul>
+                <li>Minimized CSS</li>
+                <li>Minimized JavaScript</li>
+                <li>Lazy-loaded images</li>
+                <li>Reduced HTTP requests</li>
+                <li>Optimized assets</li>
+                <li>Optimized DOM operations</li>
+                <li>Efficient page loading</li>
+              </ul>
+            </div>
+            <div class="demo-card">
+              <h3>📱 Compatibility &amp; Responsiveness</h3>
+              <ul>
+                <li>Desktop responsive design</li>
+                <li>Tablet responsive design</li>
+                <li>Mobile responsive design</li>
+                <li>Media Queries</li>
+                <li>Chrome compatibility</li>
+                <li>Firefox compatibility</li>
+                <li>Safari compatibility</li>
+                <li>Mobile browser considerations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">A</span>
+            <span>ApexPlanet</span>
+          </a>
+          <p>Curated lifestyle essentials designed for modern everyday living.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: hello@apexplanet.com</li>
+            <li>Phone: +91 98765 43210</li>
+            <li>Hours: Mon–Sat, 9am–7pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> ApexPlanet. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

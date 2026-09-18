@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse ApexPlanet products by category, price, rating and name." />
+    <title>ApexPlanet | Products</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body data-page="products">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="ApexPlanet home page">
+          <span class="brand-mark">A</span>
+          <span>ApexPlanet</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+            Cart
+            <span class="cart-count" data-cart-count>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <p class="eyebrow">Collection</p>
+          <h1>Explore our catalog</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container products-layout">
+          <aside class="filter-panel" aria-label="Product filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+              <label for="categoryFilter">Category</label>
+              <select id="categoryFilter">
+                <option value="All">All</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Books">Books</option>
+                <option value="Home">Home</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="priceFilter">Price</label>
+              <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="0-500">Under ₹500</option>
+                <option value="500-1000">₹500–₹1000</option>
+                <option value="1000-2000">₹1000–₹2000</option>
+                <option value="2000+">Above ₹2000</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="sortSelect">Sort By</label>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="low-high">Price: Low → High</option>
+                <option value="high-low">Price: High → Low</option>
+                <option value="rating">Rating: High → Low</option>
+                <option value="name-asc">Name: A → Z</option>
+                <option value="name-desc">Name: Z → A</option>
+              </select>
+            </div>
+            <div class="filter-group search-box">
+              <label for="searchInput">Search</label>
+              <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products" />
+            </div>
+          </aside>
+
+          <div class="products-content">
+            <div class="results-header">
+              <h2>Products</h2>
+              <p id="resultsSummary">Showing 0 products</p>
+            </div>
+            <div id="productGrid" class="product-grid" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">A</span>
+            <span>ApexPlanet</span>
+          </a>
+          <p>Premium products, thoughtfully chosen for everyday life.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>hello@apexplanet.com</li>
+            <li>+91 98765 43210</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> ApexPlanet. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
